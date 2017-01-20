@@ -81,9 +81,9 @@ function detect_hit()
 		angle="dl"
 		tx = pad_x1-circ_x
 		ty = pad_y0-circ_y
-		if tx>0 then
+		if tx>=0 then
 			side = "horiz"
-		elseif ty/tx < slp then
+		elseif ty/tx > slp then
 			side = "vert"
 		else
 			side = "horiz"

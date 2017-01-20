@@ -139,7 +139,7 @@ function detect_hit()
 		ty = pad_y0-circ_y
 		if tx>0 then
 			side = "horiz"
-		elseif ty/tx > slp then
+		elseif ty/tx >= slp then
 			side = "vert"
 		else
 			side = "horiz"
